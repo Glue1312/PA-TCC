@@ -1,0 +1,19 @@
+[debug] [2024-06-05T19:17:15.900Z] ----------------------------------------------------------------------
+[debug] [2024-06-05T19:17:15.903Z] Command:       /usr/local/nvm/versions/node/v20.13.0/bin/node /usr/local/nvm/versions/node/v20.13.0/bin/firebase projects:list
+[debug] [2024-06-05T19:17:15.903Z] CLI Version:   13.11.0
+[debug] [2024-06-05T19:17:15.904Z] Platform:      linux
+[debug] [2024-06-05T19:17:15.904Z] Node Version:  v20.13.0
+[debug] [2024-06-05T19:17:15.904Z] Time:          Wed Jun 05 2024 19:17:15 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-06-05T19:17:15.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-05T19:17:15.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-05T19:17:16.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-06-05T19:17:16.172Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2024-06-05T19:17:16.173Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-06-05T19:17:16.174Z] HTTP Error: 403, Firebase Management API has not been used in project b-01-425307 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=b-01-425307 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[debug] [2024-06-05T19:17:16.277Z] FirebaseError: HTTP Error: 403, Firebase Management API has not been used in project b-01-425307 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firebase.googleapis.com/overview?project=b-01-425307 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+    at responseToError (/usr/local/nvm/versions/node/v20.13.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/nvm/versions/node/v20.13.0/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
